@@ -1,0 +1,5 @@
+# [Power of Two](https://leetcode.com/problems/power-of-two/)
+
+![results](image.png)
+
+How can you tell if something is a power of two? You just do the reverse of raising two to that power: you divide. That is what happens here. I just keep dividing the number until we reach 2 or 1. This originally made the list because it was an interesting use of recursion. I then realized that there was no reason that this should be recursive. That was unneeded complexity, so I rewrote it with a simple while loop. Because this naturally decreases itself to 0, it eventually breaks itself out of the loop. Much simplier and easier to understand. The same principles apply to [0326](../0326) and [0342](../0342).

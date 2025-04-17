@@ -1,0 +1,5 @@
+# [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+
+![results](image.png)
+
+For humans, reversing an integer is easy. For computers, it can be a bit trickier. How do we get the computer to think more like a human? Part of the solution can be to reframe how we think of numbers. When I think of a number, I think of how I read it. I read it like a word, or in other words, I think of it like a string. Well, maybe treating it like a string can help. To a computer, a string is an array of characters. One of the built in array functions that JavaScript has a function to reverse arrays. So we can take advantage of this to reverse strings. By jumping from an integer to a string to an array (which is what a string really is), then we can reverse the number relatively easily.

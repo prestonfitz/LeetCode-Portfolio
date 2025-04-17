@@ -1,0 +1,5 @@
+# [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+
+![results](image.png)
+
+Recursion has been on the forefront of my programming mind as of writing this, so I began by approaching the topic from that angle. I would return the last node and then loop through the returned linked list until I got to the end, and I would attach the first node there and set its next to 0. This was an O(N^2) solution. Not very efficient. I began to consider how I could use memoization to help fix this problem. I then realized that an additional data structure could hold the information I needed, but recursion was not necessary. I then recorded each node as I passed it and removed its link to the next node. The order was kept, and I just needed to set the next on each node to the previous node in the array. Not spatially efficient but took the algorithm from O(N^2) to O(2N) or O(N). Much more performant.
