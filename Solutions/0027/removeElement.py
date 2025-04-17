@@ -5,7 +5,7 @@ class Solution:
         while inc < len(nums):
             if nums[inc] == val:
                 nums[inc] = nums[-1]
-                del nums[inc]
+                del nums[-1]
             else:
                 inc += 1
 
